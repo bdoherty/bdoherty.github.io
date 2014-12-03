@@ -13,7 +13,7 @@ numberfy = (val) ->
   else
     val
 
-parseDate = (val) -> moment(val).format('MM/DD/YYYY') if val && val.length > 0
+parseDate = (val) -> moment(val).format('DD/MM/YYYY') if val && val.length > 0
 
 class window.DataObject
   constructor: () ->
